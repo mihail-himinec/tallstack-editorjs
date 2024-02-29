@@ -35,6 +35,7 @@ class EditorJs extends Field implements HasFileAttachmentsContract
         'tooltip',
         'checklist',
         'attaches',
+        'telegram',
         'alignmenttune',
         'paragraph',
         'strikethrough',

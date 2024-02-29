@@ -19,11 +19,11 @@ class TallStackEditorJsServiceProvider extends PackageServiceProvider
 
     public function packageBooted()
     {
-        if (class_exists(\Filament\FilamentServiceProvider::class)) {
-            Filament::serving(function () {
-                Filament::registerScripts($this->getScripts(), true);
-                Filament::registerStyles($this->getStyles());
-            });
+        if (class_exists( class: \Filament\FilamentServiceProvider::class)) {
+            FilamentAsset::register([
+                            Css::make(id: 'tallstack-editorjs', path: __DIR__ . '/../resources/build/css/editor.css'),
+                            Js::make( id: 'tallstack-editorjs', path: __DIR__ . '/../resources/build/js/editor.js')
+            ]);
         }
     }
 
