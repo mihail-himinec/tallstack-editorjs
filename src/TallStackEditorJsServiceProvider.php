@@ -3,6 +3,7 @@
 namespace TallStackEditorJs;
 
 use Filament\Facades\Filament;
+use Filament\Support\Facades\FilamentAsset;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
