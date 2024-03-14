@@ -20,7 +20,7 @@
                     ])
                 }}
                 x-data="editorjs({
-                state: $wire.entangle('{{ $getStatePath() }}').defer,
+                state: $wire.$entangle('{{ $getStatePath() }}'),
                 statePath: '{{ $getStatePath() }}',
                 placeholder: '{{ $getPlaceholder() }}',
                 readOnly: {{ $isDisabled() ? 'true' : 'false' }},
