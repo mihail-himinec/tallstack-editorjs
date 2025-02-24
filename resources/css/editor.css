@@ -68,3 +68,52 @@
 .ce-inline-tool-input {
     @apply block w-full transition duration-75 focus:ring-1 focus:ring-inset disabled:opacity-70 dark:bg-gray-700 dark:text-white border-gray-300 dark:border-gray-600;
 }
+.ce-popover__container {
+    @apply dark:bg-gray-800 dark:border-gray-600;
+}
+
+.ce-block--stretched {
+    @apply px-0;
+}
+
+/*
+List Item style
+*/
+.cdx-list {
+    @apply pl-[1rem] !important;
+}
+
+/*
+Header style
+*/
+h1.ce-header {
+    @apply text-4xl font-bold mb-4;
+}
+
+h2.ce-header {
+    @apply text-3xl font-semibold mb-3;
+}
+
+h3.ce-header {
+    @apply text-2xl font-medium mb-2;
+}
+
+h4.ce-header {
+    @apply text-xl font-medium mb-2;
+}
+
+h5.ce-header {
+    @apply text-lg font-medium mb-1;
+}
+
+h6.ce-header {
+    @apply text-base font-medium mb-1;
+}
+
+/*
+Actions alignment
+*/
+.ce-toolbar__actions {
+    right: inherit;
+    @apply pr-0 pl-[6px] pt-[1px] !important;
+}
