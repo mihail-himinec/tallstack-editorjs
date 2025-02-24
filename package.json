@@ -21,7 +21,7 @@
     "editorjs-style": "^3.0.3",
     "editorjs-table": "^1.4.10",
     "editorjs-text-color-plugin": "^2.0.4",
-    "editorjs-tooltip": "^1.1.15",
+    "editorjs-tooltip": "^1.2.2",
     "editorjs-undo": "^1.0.1",
     "laravel-mix": "^6.0.49",
     "postcss": "^8.4.24",
