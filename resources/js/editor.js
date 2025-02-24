@@ -15,13 +15,13 @@ import Paragraph from "@editorjs/paragraph";
 import Alert from "editorjs-alert";
 import Warning from "@editorjs/warning";
 import Embed from "@editorjs/embed";
-import ColorPlugin from "editorjs-text-color-plugin";
 import Tooltip from "editorjs-tooltip";
 import CheckList from "@editorjs/checklist"
 import AttachesTool from "@editorjs/attaches";
 import AlignmentTuneTool from "editorjs-text-alignment-blocktune";
 import Strikethrough from "@sotaproject/strikethrough";
 import MermaidTool from "editorjs-mermaid";
+import ColorTool from "color-plugin-tool-editorjs/src";
 
 
 document.addEventListener("alpine:init", () => {
@@ -156,7 +156,7 @@ document.addEventListener("alpine:init", () => {
                 }
                 if (this.tools.includes("color")) {
                     enabledTools.Color = {
-                        class: ColorPlugin, // Используем именованный класс
+                        class: ColorTool, // Используем именованный класс
                         config: {
                             colorCollections: [
                                 '#EC7878','#9C27B0','#673AB7','#3F51B5',
@@ -171,7 +171,7 @@ document.addEventListener("alpine:init", () => {
                 }
                 if (this.tools.includes("marker")) {
                     enabledTools.Marker = {
-                        class: ColorPlugin,
+                        class: ColorTool,
                         config: {
                             defaultColor: '#FFBF00',
                             type: 'marker',
